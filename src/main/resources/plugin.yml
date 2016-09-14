@@ -1,5 +1,16 @@
 name: CitizensScripting
 author: Morphan1
 version: 0.1-SNAPSHOT
-main: net.Morphan1.citizensscripting.CitizensScripting
+main: com.morphanone.citizensscripting.CitizensScripting
 depend: [Citizens]
+
+commands:
+  csreload:
+    permission: citizensscripting.reload
+    description: Reloads CitizensScripting scripts.
+    usage: /csreload
+
+permissions:
+  citizensscripting.reload:
+    default: op
+    description: Allows reloading scripts.
